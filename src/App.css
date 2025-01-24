@@ -1,0 +1,221 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #010f34;
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu{
+  display: flex;
+  flex-direction: column;
+
+}
+.puntaje{
+  color: #d1d5db;
+}
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card{
+  padding: 2em;
+  border: #04e1fb;
+  
+  
+}
+
+.read-the-docs {
+  color: #888;
+}
+.App {
+  max-width: 800px;
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  border: 1px solid #7FBFFF;
+  padding: 20px;
+}
+.App h1{
+  color: #fff;
+  text-transform: uppercase;
+  padding: 20px 0 ;
+  border: 2px solid #7FBFFF;
+  text-shadow: 3px 3px 2px #5a28ff;
+  border-radius: 5px;
+}
+.App h1:hover{
+  color: #535bf2;
+  text-shadow: 3px 3px 2px #fff;
+}
+
+.App ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+.App ul li {
+  border: solid 1px gray;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+}
+.App ul li img {
+  width: 80px;
+}
+.App button {
+  margin: 0 5px;
+}
+.App input {
+  outline: none;
+  font-size: inherit;
+  padding: 7px;
+  border-radius: 2px;
+  border: 2px solid transparent;
+  width: 120px;
+}
+.btn{
+  border-radius: 0%;
+  color: #fff;
+  background: #8E2DE2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+.btn:hover{
+  transform: scale(1.2);
+}
+
+
+li .content {
+  position: relative;
+  width: 105px;
+  height: 105px;
+}
+.front, .back{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  backface-visibility: hidden;
+  transition: .4s;
+  border: 1px solid #7FBFFF;
+}
+.front {
+  background-color: #010f34;
+
+  transform: perspective(200px) rotateY(0deg);
+}
+.back {
+  transform: perspective(200px) rotateY(180deg);
+}
+.flip-front {
+  transform: perspective(200px) rotateY(180deg);
+}
+.flip-back {
+  transform: perspective(200px) rotateY(0deg);
+}
+
+/* timer */
+.timer {
+  margin: 20px 0;
+
+}
+.timer h3 {
+  font-size: 30px;
+  
+}
+.timer h3 span {
+  padding: 7px;
+  font-size: 35px;
+  color: #fff;
+  
+}
+/* input */
+input.warning {
+  border: 2px solid tomato;
+
+}
+
+/* cards */
+.cards {
+  margin-top: 15px;
+}
+.cards h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+/* buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* ranking */
+.ranking {
+  width: 250px;
+  height: 100px;
+  font-size: 13px;
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 2px solid #7FBFFF;
+  padding: 5px 20px;
+  border-radius: 5px;
+
+  max-height: 185px;
+  overflow: auto;
+}
+.ranking .item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1px 0;
+  
+}
+.ranking .item:not(:last-child) {
+  border-bottom: 1px solid #7FBFFF;
+}
+.ranking .item span {
+  font-weight: 500;
+}
+/* scroll */
+::-webkit-scrollbar {
+  width: 3px;
+}
+::-webkit-scrollbar-track {
+  background: #B9DBFE;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #7FBFFF;
+  /* border-radius: 15px; */
+}
+.error {
+  position: absolute;
+  top: 35px;
+  color: #2893ff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
